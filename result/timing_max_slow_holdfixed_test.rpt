@@ -1,0 +1,132 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MyDesign
+Version: K-2015.06-SP1
+Date   : Mon Nov 26 19:41:28 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm
+Wire Load Model Mode: top
+
+  Startpoint: iteration_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: e_reg_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  iteration_reg[2]/CK (DFF_X2)                          0.0000 #   0.0000 r
+  iteration_reg[2]/Q (DFF_X2)                           0.6377     0.6377 f
+  U23627/ZN (NOR2_X1)                                   0.2454     0.8831 r
+  U19615/ZN (AND2_X4)                                   0.5477     1.4307 r
+  U23280/ZN (AOI22_X1)                                  0.2376     1.6683 f
+  U23626/ZN (AND4_X2)                                   0.4154     2.0837 f
+  U23635/ZN (OR2_X4)                                    0.3273     2.4110 f
+  U23632/ZN (NAND2_X2)                                  0.1185     2.5295 r
+  add_1_root_add_0_root_add_1103_4_C903/A[0] (MyDesign_DW01_add_59)
+                                                        0.0000     2.5295 r
+  add_1_root_add_0_root_add_1103_4_C903/U1/ZN (AND2_X4)
+                                                        0.1839     2.7134 r
+  add_1_root_add_0_root_add_1103_4_C903/U1_1/S (FA_X1)
+                                                        0.6923     3.4058 f
+  add_1_root_add_0_root_add_1103_4_C903/SUM[1] (MyDesign_DW01_add_59)
+                                                        0.0000     3.4058 f
+  add_0_root_add_0_root_add_1103_4_C903/B[1] (MyDesign_DW01_add_57)
+                                                        0.0000     3.4058 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_1/CO (FA_X1)
+                                                        0.6478     4.0536 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_2/CO (FA_X1)
+                                                        0.5172     4.5708 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_3/CO (FA_X1)
+                                                        0.5172     5.0880 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_4/CO (FA_X1)
+                                                        0.5172     5.6053 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_5/CO (FA_X1)
+                                                        0.5172     6.1225 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_6/CO (FA_X1)
+                                                        0.5172     6.6398 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_7/CO (FA_X1)
+                                                        0.5172     7.1570 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_8/CO (FA_X1)
+                                                        0.5172     7.6743 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_9/CO (FA_X1)
+                                                        0.5172     8.1915 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_10/CO (FA_X1)
+                                                        0.5172     8.7087 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_11/CO (FA_X1)
+                                                        0.5172     9.2260 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_12/CO (FA_X1)
+                                                        0.5172     9.7432 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_13/CO (FA_X1)
+                                                        0.5172    10.2605 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_14/CO (FA_X1)
+                                                        0.5172    10.7777 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_15/CO (FA_X1)
+                                                        0.5172    11.2950 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_16/CO (FA_X1)
+                                                        0.5172    11.8122 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_17/CO (FA_X1)
+                                                        0.5172    12.3294 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_18/CO (FA_X1)
+                                                        0.5172    12.8467 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_19/CO (FA_X1)
+                                                        0.5172    13.3639 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_20/CO (FA_X1)
+                                                        0.5172    13.8812 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_21/CO (FA_X1)
+                                                        0.5172    14.3984 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_22/CO (FA_X1)
+                                                        0.5172    14.9157 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_23/CO (FA_X1)
+                                                        0.5172    15.4329 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_24/CO (FA_X1)
+                                                        0.5172    15.9502 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_25/CO (FA_X1)
+                                                        0.5172    16.4674 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_26/CO (FA_X1)
+                                                        0.5172    16.9846 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_27/CO (FA_X1)
+                                                        0.5172    17.5019 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_28/CO (FA_X1)
+                                                        0.5172    18.0191 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_29/CO (FA_X1)
+                                                        0.5172    18.5364 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_30/CO (FA_X1)
+                                                        0.5172    19.0536 f
+  add_0_root_add_0_root_add_1103_4_C903/U1_31/S (FA_X1)
+                                                        0.7162    19.7698 r
+  add_0_root_add_0_root_add_1103_4_C903/SUM[31] (MyDesign_DW01_add_57)
+                                                        0.0000    19.7698 r
+  U23817/Z (CLKBUF_X3)                                  0.1919    19.9616 r
+  add_1103_C908/B[31] (MyDesign_DW01_add_0)             0.0000    19.9616 r
+  add_1103_C908/U1_31/S (FA_X1)                         0.6980    20.6596 f
+  add_1103_C908/SUM[31] (MyDesign_DW01_add_0)           0.0000    20.6596 f
+  U23811/ZN (AOI22_X2)                                  0.2318    20.8914 r
+  U23810/ZN (OAI21_X2)                                  0.1556    21.0470 f
+  e_reg_reg[31]/D (DFF_X1)                              0.0000    21.0470 f
+  data arrival time                                               21.0470
+
+  clock clk (rise edge)                                21.5000    21.5000
+  clock network delay (ideal)                           0.0000    21.5000
+  clock uncertainty                                    -0.0500    21.4500
+  e_reg_reg[31]/CK (DFF_X1)                             0.0000    21.4500 r
+  library setup time                                   -0.3367    21.1133
+  data required time                                              21.1133
+  --------------------------------------------------------------------------
+  data required time                                              21.1133
+  data arrival time                                              -21.0470
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0663
+
+
+1
